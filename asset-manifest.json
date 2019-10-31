@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cinne_frontend/static/css/main.67a8fd4e.chunk.css",
+    "main.js": "/cinne_frontend/static/js/main.e0095f4e.chunk.js",
+    "main.js.map": "/cinne_frontend/static/js/main.e0095f4e.chunk.js.map",
+    "runtime-main.js": "/cinne_frontend/static/js/runtime-main.ea9d1580.js",
+    "runtime-main.js.map": "/cinne_frontend/static/js/runtime-main.ea9d1580.js.map",
+    "static/css/2.a064d9b9.chunk.css": "/cinne_frontend/static/css/2.a064d9b9.chunk.css",
+    "static/js/2.b167f008.chunk.js": "/cinne_frontend/static/js/2.b167f008.chunk.js",
+    "static/js/2.b167f008.chunk.js.map": "/cinne_frontend/static/js/2.b167f008.chunk.js.map",
+    "index.html": "/cinne_frontend/index.html",
+    "precache-manifest.48f8adedf5557597d22f09c2888051d5.js": "/cinne_frontend/precache-manifest.48f8adedf5557597d22f09c2888051d5.js",
+    "service-worker.js": "/cinne_frontend/service-worker.js",
+    "static/css/2.a064d9b9.chunk.css.map": "/cinne_frontend/static/css/2.a064d9b9.chunk.css.map",
+    "static/css/main.67a8fd4e.chunk.css.map": "/cinne_frontend/static/css/main.67a8fd4e.chunk.css.map",
+    "static/media/index.css": "/cinne_frontend/static/media/montserrat-alternates-latin-900italic.816df906.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea9d1580.js",
+    "static/css/2.a064d9b9.chunk.css",
+    "static/js/2.b167f008.chunk.js",
+    "static/css/main.67a8fd4e.chunk.css",
+    "static/js/main.e0095f4e.chunk.js"
+  ]
+}
