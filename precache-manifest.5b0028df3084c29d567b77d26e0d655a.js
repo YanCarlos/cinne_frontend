@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1edc817bfac4e502f48d5452e070168",
+    "revision": "fa2a281951c3eadc6ce1751b89b3c659",
     "url": "/cinne_frontend/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cinne_frontend/static/css/2.a064d9b9.chunk.css"
   },
   {
-    "revision": "f445c0b93ec9e447ecd7",
+    "revision": "595eda1209b985b1ce05",
     "url": "/cinne_frontend/static/css/main.67a8fd4e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cinne_frontend/static/js/2.b167f008.chunk.js"
   },
   {
-    "revision": "f445c0b93ec9e447ecd7",
-    "url": "/cinne_frontend/static/js/main.e0095f4e.chunk.js"
+    "revision": "595eda1209b985b1ce05",
+    "url": "/cinne_frontend/static/js/main.06f91e02.chunk.js"
   },
   {
     "revision": "2677fe78c46a462f6cd4",

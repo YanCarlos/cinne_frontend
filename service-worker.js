@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cinne_frontend/precache-manifest.48f8adedf5557597d22f09c2888051d5.js"
+  "/cinne_frontend/precache-manifest.5b0028df3084c29d567b77d26e0d655a.js"
 );
 
 self.addEventListener('message', (event) => {
