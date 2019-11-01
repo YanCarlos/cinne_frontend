@@ -7,7 +7,7 @@ function NewMovieButton({onclick, disabled}) {
   return(
     <Button color="primary" onClick={onclick} disabled={disabled}>
       <FontAwesomeIcon icon={faPlus} className="icon"/>
-      Crear Nueva Pelicula
+      Crear nueva película
     </Button>
   )
 }

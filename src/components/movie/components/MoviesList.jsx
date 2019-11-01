@@ -1,13 +1,13 @@
 import React  from 'react';
-import MovieService from '../services/MovieService';
+import MovieService from '../../../services/MovieService';
 import Movie from './Movie';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import DatePicker from 'react-datepicker';
-import CustomModal from './commons/CustomModal';
-import NewMovieButton from './commons/NewMovieButton';
-import NewMovie from './NewMovie';
+import CustomModal from '../../commons/CustomModal';
+import NewMovieButton from '../../commons/NewMovieButton';
+import CreateMovie from './CreateMovie';
 
-class MovieList extends React.Component {
+class MoviesList extends React.Component {
   constructor(props) {
     super(props);
 
@@ -54,12 +54,16 @@ class MovieList extends React.Component {
 
   render() {
     return(
-      <div className="movies">
-        <div className="title d-flex justify-content-between"> 
-          <h2>Peliculas</h2>
-          <NewMovieButton onclick={() => this.newMovie()} />
-        </div>
-
+      <Container fluid={true} className="movies">
+        <Row className="title-container">
+          <Col sm="6" xs="12" className="column">
+            <h2>Peliculas</h2>
+          </Col>
+          <Col sm="6" xs="12" className="d-flex justify-content-end column">
+            <NewMovieButton onclick={() => this.newMovie()}/>
+          </Col>
+        </Row>
+      
         <div className="list">
           <Row>
             <Col lg="4" >
@@ -75,17 +79,21 @@ class MovieList extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col lg="12" className="d-flex justify-content-center">
+            <Col lg="12" className="d-flex justify-content-center mb-10">
               {this.renderLoader()}
             </Col>
+          </Row>
+          <Row>
+            
             {
               this.state.movies.length ? (
               this.state.movies.map(movie => (
-                <Col lg="3" className="column" key={movie.id}>
+                <Col lg="3" sm="6"className="column" key={movie.id}>
                   <Movie
                     name={movie.name}
                     image_url={movie.image_url} 
                     can_booking={movie.can_booking}
+                    schedule_id={movie.schedule_id}
                   />
                 </Col>
 
@@ -105,12 +113,12 @@ class MovieList extends React.Component {
               centered
               closeButtonText='Close'
             >
-              <NewMovie onSuccess={() => this.fetchMovies(new Date()) }/>
+              <CreateMovie onSuccess={() => this.fetchMovies(new Date()) }/>
             </CustomModal>
           }
-      </div>
+      </Container>
     )
   }
 }
 
-export default MovieList;
+export default MoviesList;

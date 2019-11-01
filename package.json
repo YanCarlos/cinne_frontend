@@ -19,6 +19,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "reactstrap": "^8.1.1",
+    "typeface-montserrat": "^0.0.75",
+    "typeface-montserrat-alternates": "^0.0.72",
     "yup": "^0.27.0"
   },
   "scripts": {

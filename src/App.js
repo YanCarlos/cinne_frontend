@@ -1,15 +1,15 @@
 import React from 'react';
-import './App.scss';
+import './styles/style.scss';
 import { BrowserRouter as Router } from "react-router-dom";
-import LeftBar from './components/LeftBar';
+import SideBar from './components/SideBar';
 import Yield from './components/Yield';
 
 function App() {
   return (
     <div className="app">
       <Router>
-        <LeftBar />
-        <Yield />
+      		<SideBar />
+      		<Yield />
       </Router>
     </div>
   );

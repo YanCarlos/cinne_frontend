@@ -1,0 +1,37 @@
+
+/***************************
+    Responsive Variables
+***************************/
+
+$Tablet-min: 768px;
+$Tablet-max: 1024px;
+$Mobile-min: 320px;
+$Mobile-max: 767px;
+$Desktop-max: 1200px;
+$Medium-device-min: 1020px;
+$Mediun-device-max: 1340px;
+
+@mixin mobile {
+  @media (min-width: #{$Mobile-min}) and (max-width: #{$Mobile-max}) {
+    @content;
+  }
+}
+
+@mixin tablet_to_mobile {
+  @media (min-width: #{$Mobile-min}) and (max-width: #{$Tablet-max}) {
+    @content;
+  }
+}
+
+@mixin medium-device {
+  @media (min-width: #{$Medium-device-min}) and (max-width: #{$Mediun-device-max}) {
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media (min-width: #{$Tablet-max}){
+    @content;
+  }
+}
+

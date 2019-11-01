@@ -1,16 +1,17 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import MovieList from './MovieList';
+import { MoviesList } from './movie/index';
+import { BookingsList } from './booking/index';
 
 function Yield() {
   return (
     <div className="yield">
       <Switch>
         <Route path="/reservas">
-          Reservas
+          <BookingsList />
         </Route>
         <Route path="/">
-          <MovieList />
+          <MoviesList />
         </Route>
       </Switch>
     </div>

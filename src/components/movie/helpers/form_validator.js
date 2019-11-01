@@ -10,5 +10,5 @@ export const FormValidator = Yup.object().shape({
     .url('Esto debe ser una URL valida'),
   schedules_attributes: Yup.array()
 	  .min(1,'Debes seleccionar por lo menos una fecha.')
-	  .required('Nos gustaría saber que te interesa')
+	  .required('Las fechas son requeridas.')
 })
